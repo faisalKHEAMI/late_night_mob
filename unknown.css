@@ -1,0 +1,212 @@
+body, html {
+   height: 100%;
+   width: auto;
+   margin: 0%;
+   padding: 0%;
+   z-index: 1;
+}
+.main{
+  height: 100%;
+  width: auto;
+  background-image: url("late-night.jpeg");
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent image from repeating */
+  background-size: 100%; /* scale image to cover entire element */
+}
+.nav {
+   height: 2%;
+   width: 100%;
+   background-color: black;
+   margin-top: 0;
+   margin-left: -2%;
+   margin-right: 10%;
+   border: none;
+   padding: 4%;
+   padding-left: 5%;
+   box-shadow: 10px -3px 20px black; /* Add shadow */
+   position: sticky;
+   top: 0;
+   z-index: 3;
+
+}
+
+/* Common style for all buttons */
+.Our_story, .Goal, .Info, .Cart, .signin {
+   position: sticky;
+   z-index: 2;
+   border: none;
+   background-color: black;
+   color: white;
+   font-size: 100%;
+
+
+}
+
+.Our_story {
+   top: 4%;
+   left: 5%;
+}
+
+.Goal {
+   top: 4%;
+left: 25%;
+}
+
+.Info {
+   top: 4%;
+   left: 45%;
+}
+
+.Cart {
+   top: 4%;
+   left: 65%;
+}
+
+.signin {
+   top: 4%;
+   left: 85%;
+}
+
+
+.our_story_text, .Goal_text, .info_text{
+  display: none;
+  padding: 5%;
+  text-align: center;
+  width: 75%;
+  height: 1vh;
+  background-color: black;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: white;
+  margin: 0;
+  z-index: 3;
+  position: fixed;
+
+}
+
+/* Show the sections when they have the expanded class */
+.our_story_text_expanded, .Goal_text_expanded, .info_text_expanded, .signin_expanded, .cart-section_expanded {
+   display: block;
+  position: sticky;
+}
+.products{
+  margin-top:0%;
+  height:50%;
+  align-items: center;
+  position: relative;
+}
+.product-card, .product-card2, .product-card3, .product-card4 {
+  margin-top: 20%;
+   width: 20%;
+   background-color: black;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+   overflow: hidden;
+   /* changed to relative to make them scroll */
+   position: fixed;
+   color: white;
+}
+
+.product-card {
+    left: 2%;
+
+}
+
+.product-card2 {
+    left: 27%;
+
+}
+
+.product-card3 {
+    left: 52%;
+
+
+}
+
+.product-card4 {
+    left: 77%;
+
+}
+
+
+.product-image img {
+   width: 100%;
+   height: auto;
+}
+
+.product-info {
+   padding: 15px;
+}
+
+.product-name {
+   margin: 0;
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+
+.product-price {
+   color: #888;
+   font-size: 18px;
+}
+.cart-section, .siging-section {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 300px;
+    height: 30%;
+    background-color: black;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out, right 0.3s ease-in-out;
+    z-index: 2;
+      left: 65%;
+      top: 13%;
+      color: white;
+}
+.cart-items {
+    padding: 0;
+    list-style: none;
+
+}
+.button{
+  text-align: center;
+
+  border-radius: 30px; /* rounding the corners */
+  cursor: pointer;  /* indicates that this is clickable */
+  transition: 0.3s;  /* smooth transition for hover effect */
+  background-color: black; /* light gray background on hover */
+  margin-left: 30%;
+  color: white;
+}
+ .button:hover {
+       background-color: #dbdbdb; /* light gray background on hover */
+ }
+.social_media {
+    position: absolute;
+    top:35%;
+    padding: 20px;
+    width: 250px;  /* reduced for a more button-like proportion */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px; /* rounding the corners */
+    cursor: pointer;  /* indicates that this is clickable */
+    transition: 0.3s;  /* smooth transition for hover effect */
+    background-color: grey; /* light gray background on hover */
+}
+
+.social_media:hover {
+    background-color: #dbdbdb; /* light gray background on hover */
+}
+
+
+.social_media p {
+    margin: 0 0 10px 0; /* space below the paragraph */
+}
+
+.social_media img {
+    width: 40px; /* adjust logo size */
+    height: 40px;
+}
+
+.sign, .signin-form, .signup-form {
+    display: none;
+}
